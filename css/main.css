@@ -1,0 +1,450 @@
+/* ================ main styles =================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+body{
+    font-family: 'Open Sans', sans-serif;
+    transition: background 1s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+}
+
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 82px;
+    line-height: 1em;
+    color: black;
+}
+
+h2{
+    position: relative;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 72px;
+    line-height: 1em;
+    padding-left: 22px;
+    color: black;
+}
+
+h3{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 32px;
+}
+
+p{
+    padding: 30px;
+    line-height: 1.5em;
+    color: black;
+}
+
+h2.line::before{
+    content: "";
+    display: block;
+    background-color: #ffdd17;
+    height: 100px;
+    width: 5px;
+    position: absolute;
+    left: 0;
+    top: -14px;
+    z-index: 1;
+    -webkit-animation: animate .7s linear ;
+            animation: animate .7s linear; 
+    -webkit-animation-delay: 5s; 
+            animation-delay: 5s;
+}
+
+h2.line::after{
+    content: "";
+    display: block;
+    background-color: #ffdc19;
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    top: 75px;
+    left: -4px;
+    z-index: 1;
+    -webkit-animation: animate2 .7s linear ;
+    animation: animate2 .7s linear; 
+    -webkit-animation-delay: 5s; 
+            animation-delay: 5s;
+}
+
+@-webkit-keyframes animate { 
+    0% { 
+        height: 0; 
+    } 
+
+    100% { 
+        height: 100px; 
+    } 
+}
+
+@keyframes animate { 
+    0% { 
+        height: 0; 
+    } 
+
+    100% { 
+        height: 100px; 
+    } 
+} @-webkit-keyframes animate2 { 
+    0% { 
+        top: -14px; 
+    } 
+
+    100% { 
+        top: 75px; 
+    } 
+}
+
+@keyframes animate2 { 
+    0% { 
+        top: -14px; 
+    } 
+
+    100% { 
+        top: 75px; 
+    } 
+} 
+
+button.btn{
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 0px;
+}
+
+button.btn.btn-primary{
+    background-color: black;
+    border-color: black;
+}
+
+button.btn.btn-primary:hover{
+    background-color: white;
+    color: #000;
+    border-color: black;
+}
+
+.cursor{
+    width:3rem;
+    height: 3rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 9999;
+    transform: translate(-50%,-50%);
+    pointer-events: none;   
+}
+
+.inner-cursor{
+    width:.5rem;
+    height: .5rem;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 9999;
+    transform: translate(-50%,-50%);
+    pointer-events: none; 
+}
+/*================== nav bar =====================*/
+a.link-text
+{
+    position: relative;
+}
+
+a.link-text:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+a.link-text:hover:before {
+    visibility: visible;
+    height: 3px;
+  }
+
+a:hover{
+    text-decoration: none;
+}
+
+/*================== home header section =====================*/
+#header{
+height: 100vh;
+margin-top: 100px;
+}
+
+#header .header-text{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+.yellow{
+    color: #FFDE17;
+}
+
+.black{
+    color: black;
+}
+
+.white{
+    color: white;
+}
+
+#brush{
+    width: 600px;
+    position: absolute;
+    right: 0;
+    top: 125px;
+}
+
+.scroll-text{
+    display: flex;
+    align-items: baseline;
+}
+
+.scroll-text p{
+    padding:0px 20px 0px 0px;
+}
+
+.scroll-text img{
+    height:30px;
+}
+
+/*================= intro section =================*/
+#intro{
+    height: 100vh;
+
+}
+
+#intro img{
+    width: 300px;
+}
+
+#intro div div:nth-child(2){
+    margin-top: 60px;
+}
+
+#intro button{
+    margin-left: 30px;
+}
+#intro .col-md-6{
+    padding-left:0;
+}
+
+
+/*================= gallery section =================*/
+.gallery-before {
+    height: 300px;
+}
+#gallery{
+    height: 100vh;
+}
+
+#gallery h2{
+    text-align: center;
+    padding-top: 60px;
+}
+
+#gallery img{
+    width: 400px;
+}
+
+#gallery ul{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    display: flex;
+    justify-content: center;
+}
+
+#gallery ul.mobile{
+    flex-direction: column;
+}
+
+@media(min-width:991px){
+    .mobile{
+        display: none!important;
+    }
+
+}
+
+@media(max-width:991px){
+    .desktop{
+        display: none!important;
+    }
+}
+
+/*===================== components ======================*/
+.panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.component{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.color-white {
+    background-color: #fff;
+}
+
+.color-black {
+    background-color: #000;
+}
+
+.color-yellow {
+    background-color: #FFDE17;
+}
+
+.component img{
+    width: 400px;
+}
+
+.component h3{
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    margin: 50px 20px;
+}
+
+.component .row{
+    margin-left: 30px;
+}
+
+p.component-p{
+    font-size: 32px;
+}
+
+.component-p .yellow,.component-p .black{
+    font-weight: 700;
+}
+
+span.number {
+    margin: 10px;
+}
+
+a.plus-btn {
+    position: relative; 
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 63px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: white;
+    transition: .5s;
+    margin-top: 20px;
+    border: 5px solid white;
+  }
+  
+  a.plus-btn:hover:after {
+    transform: scale(0.85);
+}
+a.plus-btn:hover {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.4);
+    color: #fff;
+}
+
+
+/*===================== component 1 =======================*/
+.component1 h2{
+    color:white;
+}
+
+.component1 p{
+    color: white;
+}
+
+.component1 h3{
+    color: white;
+}
+
+@media (min-width: 768px){
+    #intro img{
+       width: 100%;
+    }
+
+    h1{
+        font-size: 120px;
+    }
+}
+
+a.animated-underline{
+    color:black;
+}
+
+/*===================== in text link animations =======================*/
+.animated-underline{
+	--uiAnimatedUnderlineWidth: var(--animatedUnderlineWidth, 100%);
+	--uiAnimatedUnderlineHeight: var(--animatedUnderlineHeight, 2px);
+	--uiAnimatedUnderlineBgColor: var(--animatedUnderlineBgColor, currentColor);
+	--uiAnimatedUnderlinePositionX: var(--animatedUnderlinePositionX, left);
+	--uiAnimatedUnderlinePositionY: var(--animatedUnderlinePositionY, bottom);
+
+	/*
+		1. For multi-line animated underline the "inline" value for the display property is compulsory.
+		2. Adds opportunity to create multi-line padding
+	*/
+
+	--rLinkDisplay: inline; /* 1 */
+
+	background-image: linear-gradient(0, #ffdb1a, 0, #ffdb1a);
+	background-size: var(--uiAnimatedUnderlineWidth) var(--uiAnimatedUnderlineHeight);
+	background-position: var(--uiAnimatedUnderlinePositionX) var(--uiAnimatedUnderlinePositionY);
+	background-repeat: no-repeat;
+	
+	-webkit-box-decoration-break: clone; /* 2 */
+	box-decoration-break: clone; /* 2 */
+	
+	will-change: background-size;
+	transition: background-size .25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    z-index: -9999;
+}
+
+/*
+=====
+SETTINGS
+=====
+*/
+
+:root{
+	--animatedUnderlineHeight: .5rem;
+	--animatedUnderlineBgColor: var(--accentColor);
+}	
+
+.animated-underline_type1{
+	--animatedUnderlineWidth: 100%;
+}
+
+.animated-underline_type1:hover{
+	--animatedUnderlineHeight: 100%;
+}
