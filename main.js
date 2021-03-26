@@ -1,3 +1,4 @@
+//image parallax
 window.addEventListener('scroll', function(e){
     const target = document.querySelectorAll('.scroll');
 
@@ -31,7 +32,7 @@ function cursor(e){
 
 */
 
-
+//background change on components
 window.sections = [...document.querySelectorAll('.panel')];
 window.lastScrollTop = window.pageYOffset;
 
@@ -51,3 +52,5 @@ function onScroll() {
     .find(section => section.rect.bottom >= (window.innerHeight * 0.5));
   document.body.style.background = section.el.getAttribute('data-bg');
 }
+
+
