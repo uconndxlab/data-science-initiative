@@ -550,18 +550,21 @@
     border-radius: 50%;
   }
   .shape.shape-1 {
+      display: none;
     background: #FFDE17;
     width: 550px;
     height: 550px;
     margin: -180px 0 0 -290px;
   }
   .shape.shape-2 {
+    display: none;
     background: #E2C40D;
     width: 340px;
     height: 340px;
     margin: -75px 0 0 -185px;
   }
   .shape.shape-3 {
+    display: none;
     background: #000;
     width: 170px;
     height: 170px;
