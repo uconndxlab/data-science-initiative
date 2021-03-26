@@ -95,7 +95,7 @@
   }
   
   
-  button.btn a{
+  button.btn{
     font-weight: 500;
     text-transform: uppercase;
     padding: 10px 15px;
@@ -112,11 +112,8 @@
     border-color: black;
   }
 
-  .btn-primary a{
-      color: white;
-  }
 
-  .btn-primary a:hover{
+  .btn-primary:hover{
     color: black;
 }
   
@@ -125,6 +122,15 @@
     color: #000;
     border-color: black;
     cursor:none;
+  }
+
+  button.btn.btn-secondary{
+    background: white;
+    color: black;
+  }
+
+  .component button.btn{
+    margin-left: 30px;
   }
   
   div.cursors div{
@@ -275,20 +281,34 @@
   }
   
   #intro img{
-    width: 300px;
+    max-width: 100%;
   }
-  
+
+  #intro .row{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
   #intro div div:nth-child(2){
-    margin-top: 60px;
-    padding-left: 40px;
+      margin-top: 60px;
   }
   
   #intro button{
     margin-left: 30px;
   }
-  #intro .col-md-6{
-    padding-left:0;
+
+  @media(min-width:991px){
+    #intro .col-lg-6{
+        padding-left:0;
+    }
+
+    #intro div div:nth-child(2){
+    margin-top: 60px;
+    padding-left: 40px;
+    }
   }
+
   
   
   /*================= gallery section =================*/
@@ -352,7 +372,6 @@
     display: flex;
     justify-content: center;
     position: relative;
-    scroll-snap-align: start;
   }
   
   .color-white {
@@ -370,12 +389,59 @@
   .component img{
     width: 300px;
   }
+
+
+  .component .row{
+    margin-left: 30px;
+    width: 90vw;
+  }
+  
+  p.component-p{
+    font-size: 32px;
+  }
   
   @media (max-width: 1200px){
     .component img{
         width: 250px;
     }
   }
+  @media (max-width: 576px){
+    .component .row .div:nth-child(1){
+        order: 2;
+    }
+    
+    .component{
+        display: block;
+        margin-top: 40px;
+    }  
+
+    .component img{
+        width: 200px;
+        margin-top: 40px;
+    }
+
+    h2{
+        font-size: 50px;
+    }
+
+    .component h2{
+        padding: 0;
+    }
+
+    p.component-p{
+        font-size: 20px!important;
+        padding: 30px 0px;
+    }
+
+    .component .row{
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .component button.btn{
+        margin: 0px;
+    }
+}
   
   .component h3{
     -webkit-writing-mode: vertical-rl;
@@ -385,14 +451,7 @@
     margin: 50px 20px;
   }
   
-  .component .row{
-    margin-left: 30px;
-    width: 90vw;
-  }
-  
-  p.component-p{
-    font-size: 32px;
-  }
+
   
   .component-p .yellow,.component-p .black{
     font-weight: 700;
@@ -447,9 +506,6 @@
   
   a.animated-underline{
     color:black;
-  }
-  .component1{
-    background-image: url('img/tech-line-white-animate.svg');
   }
   
   /*===================== in text link animations =======================*/
@@ -551,7 +607,7 @@
   }
   .shape.shape-1 {
       display: none;
-    background: #FFDE17;
+    background: #FCD801;
     width: 550px;
     height: 550px;
     margin: -180px 0 0 -290px;
@@ -579,7 +635,7 @@
     position: fixed;
     z-index: 1;
     top: 0;
-    right: 0;
+    left: 0;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.9);
     overflow-x: hidden;
