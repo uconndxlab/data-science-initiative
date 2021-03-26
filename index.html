@@ -151,7 +151,10 @@
     <script src="main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script>
-      document.body.addEventListener('mousemove', (evt)=>{
+
+       var isTouchDevice = 'ontouchstart' in document.documentElement;
+       if (isTouchDevice == false){
+        document.body.addEventListener('mousemove', (evt)=>{
         const mouseX = evt.clientX +10;
         const mouseY = evt.clientY - 50;
 
@@ -166,6 +169,8 @@
           stagger: -0.1
         })
        })
+       document.body.style.cursor = 'none';
+       }
 
        function openNav() {
           document.getElementById("myNav").style.width = "100%";
