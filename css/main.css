@@ -13,11 +13,20 @@
   
   .navbar-light .navbar-nav .nav-link {
     font-weight: 600;
-    color: white;
+    color: black;
   }
   
   .navbar-nav{
     z-index: 9999;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media(max-width:991px){
+    .navbar-nav{
+        display: none;
+    }
   }
   
   @media (min-width: 992px){
