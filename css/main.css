@@ -3,11 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
+}  
   
   body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Karla', sans-serif;
     transition: background 1s ease-in-out;
   }
   
@@ -18,7 +17,7 @@
   
   .navbar-nav{
     z-index: 9999;
-    padding-top: 30px;
+    margin-top: 25px;
     display: flex;
     justify-content: center;
   }
@@ -68,6 +67,20 @@
     font-family: 'Bebas Neue', cursive;
     font-size: 32px;
   }
+
+  h4{
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+    padding-left: 30px;
+    font-size: 40px;
+  }
+
+  h5{
+    font-family: 'Karla', sans-serif;
+    font-size: 35px;
+    line-height: 1.25em;
+    color:black
+  }
   
   p{
     padding: 30px;
@@ -78,17 +91,13 @@
   h2.line::before{
     content: "";
     display: block;
-    background-color: #ffdd17;
+    background-color: #ffdd19;
     height: 100px;
     width: 5px;
     position: absolute;
     left: 0;
     top: -14px;
-    z-index: 1;
-    -webkit-animation: animate .7s linear ;
-            animation: animate .7s linear; 
-    -webkit-animation-delay: 5s; 
-            animation-delay: 5s;
+    z-index: -9;
   }
   
   h2.line::after{
@@ -100,7 +109,7 @@
     position: absolute;
     top: 75px;
     left: -4px;
-    z-index: 1;
+    z-index: -9;
   }
   
   
@@ -129,15 +138,23 @@
 }
   
   button.btn.btn-primary:hover{
-    background-color: white;
+    background-color: transparent;
     color: #000;
     border-color: black;
     cursor:none;
   }
 
   button.btn.btn-secondary{
-    background: white;
+    background: transparent;
     color: black;
+    border-color: black;
+  }
+
+  button.btn.btn-secondary:hover{
+    background-color: black;
+    color: white;
+    border-color: black;
+    cursor:none;
   }
 
   .component button.btn{
@@ -173,7 +190,8 @@
   }
   
   a.nav-link:hover{
-    color: #ffdb1a!important;
+    color: #000!important;
+    cursor: none;
   }
   
   a.nav-link:after{
@@ -284,11 +302,34 @@
     64%  { transform: translateY(0); }
     100% { transform: translateY(0); }
   }
+
+@media (min-width:768px){
+  .inner-content h1:nth-child(1){
+    margin-left: -100px;
+  }
+  
+  .inner-content h1:nth-child(2){
+    margin-left: 60px;
+  }
+}
+
+
   /*================= intro section =================*/
   #intro{
-    height: 100vh;
     display: flex;
     align-items: center;
+  }
+
+  #intro h4{
+    margin-bottom: 20px;
+  }
+
+  #intro p{
+  padding:0px 30px
+  }
+
+  .full-height{
+    height: 100vh;
   }
   
   #intro img{
@@ -301,10 +342,6 @@
       align-items: center;
   }
 
-  #intro div div:nth-child(2){
-      margin-top: 60px;
-  }
-  
   #intro button{
     margin-left: 30px;
   }
@@ -312,11 +349,11 @@
   @media(min-width:991px){
     #intro .col-lg-6{
         padding-left:0;
+        padding-right: 0;
     }
 
-    #intro div div:nth-child(2){
-    margin-top: 60px;
-    padding-left: 40px;
+    .grid-right div div:nth-child(2){
+    padding: 40px;
     }
   }
 
@@ -324,7 +361,7 @@
   
   /*================= gallery section =================*/
   .gallery-before {
-    height: 300px;
+    height: 200px;
   }
   #gallery{
     height: 100vh;
@@ -508,10 +545,25 @@
   .component1 h3{
     color: white;
   }
+
+  .component1 .btn.btn-primary{
+    border-color: white;
+    background: white;
+    color: black;
+  }
+
+  .component1 .btn.btn-primary:hover{
+    background-color: transparent!important;
+    color: white!important;
+    border-color: white!important;
+  }
   
   @media (min-width: 768px){
     #intro img{
        width: 100%;
+       height: 650px;
+       -o-object-fit: cover;
+          object-fit: cover;
     }
   }
   
@@ -564,33 +616,36 @@
   
   .animated-underline_type1:hover{
   --animatedUnderlineHeight: 100%;
+  cursor: none;
   }
   
   
   
 /*================== blob circle effect on heading ===============*/
-  .shapes {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    z-index: -9999;
-    top: -100px;
-    background-color: black;
-  }
-  .content {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    background: #fff;
-    mix-blend-mode: lighten;
-    z-index: -9999;
-  }
+.shapes {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -9999;
+  top: -100px;
+  background-color: black;
+}
+.content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  mix-blend-mode: lighten;
+  z-index: -9999;
+}
+
 
   .inner-content{
     position: relative;
@@ -599,6 +654,7 @@
   .cursor {
     position: fixed;
     background: #FFDE17;
+    border:black 1px solid;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -611,31 +667,32 @@
     z-index: 100000;
     margin: -10px 0 0 -20px;
   }
+  
   .shape {
     will-change: transform;
     position: absolute;
     border-radius: 50%;
   }
   .shape.shape-1 {
-      display: none;
+    display: none;
     background: #FCD801;
-    width: 550px;
-    height: 550px;
-    margin: -180px 0 0 -290px;
+    width: 350px;
+    height: 350px;
+    margin: -88px 0px 0px -190px;
   }
   .shape.shape-2 {
     display: none;
     background: #E2C40D;
-    width: 340px;
-    height: 340px;
-    margin: -75px 0 0 -185px;
+    width: 140px;
+    height: 140px;
+    margin: 27px 0px 0px -82px;
   }
   .shape.shape-3 {
     display: none;
     background: #000;
-    width: 170px;
-    height: 170px;
-    margin: 10px 0 0 -100px;
+    width: 50px;
+    height: 50px;
+    margin: 72px 0px 0px -35px;
   }
 
 
@@ -714,3 +771,39 @@
   }
 
 
+  @media (min-width:991px){
+    .navbar{
+      justify-content: center;
+    }
+  }
+
+
+/*=============== footer ================*/
+footer .row .footer-col{
+  display: flex;
+  height: 220px;
+}
+
+footer .row .footer-col:nth-child(2){
+  background-color: black;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+footer .row .footer-col:nth-child(1){
+  background-color: #ffdb1a;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .row .footer-col:nth-child(2) p{
+  color: white;
+  padding: 0px 30px 0px 30px;
+}
+
+footer .row .footer-col:nth-child(1) p{
+  color: black;
+  padding: 30px 30px 0px 30px;
+}

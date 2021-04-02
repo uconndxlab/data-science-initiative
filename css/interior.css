@@ -1,0 +1,129 @@
+/*========== interior headers main ==========*/
+.interior-header{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+#message-text{
+    padding: 100px 0px;
+    background-color: whitesmoke;
+}
+
+#message-text h2{
+    padding-bottom:30px;
+    padding-left: 0px;
+}
+
+#message-text p{
+    padding:0px;
+}
+
+.message-text-white{
+    background-color: white!important;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* add padding to box grid text area */
+.inner-pad{
+    padding:0px 30px;
+}
+
+@media (max-width:991px){
+    #intro h4{
+        margin-top:30px;
+    }
+    
+    .inner-pad{
+        padding:0;
+    }
+}
+
+/*============ people ============*/
+#main-faculty{
+    padding: 100px 0px;
+    background-color: whitesmoke;
+
+}
+
+h5.people-header{
+    color: black;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.main-person-img{
+    width: 250px;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.main-person{
+    margin-bottom: 100px;
+}
+
+.main-person h5{
+    margin: 20px 0px 10px 0px;
+    font-size: 30px
+
+}
+
+.main-person p{
+    margin: 0;
+    padding: 0px 0px 5px 0px ;
+}
+
+p.main-person-title{
+    font-weight: 600;
+}
+
+
+a.linkedin-link{
+    padding-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+
+a.linkedin-link img{
+    width: 35px;
+    margin-left: 8px;
+    transition: .3s ease-in-out;
+}
+
+a.linkedin-link:hover img{
+    margin-left: 18px;
+    cursor: none;
+}
+
+a.linkedin-link:hover{
+    color: #ffdc19;
+    cursor: none;
+}
+
+#other-faculty{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+img.person-img {
+    width: 200px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.person h5{
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+p.person-title{
+    padding:0;
+}
+
+#other-faculty .row {
+    margin-bottom: 30px;
+}
