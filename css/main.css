@@ -233,25 +233,23 @@
   }
   
   .brush{
+    mix-blend-mode: normal;
     position: absolute;
-    width: 175px;
-    top: 0px;
-    right: 0px;
+
   }
 
   @media (min-width: 576px){
     .brush{
-      width: 275px;
-      top: 10px;
-      right: 0px;
+
     }
   }
   
   @media (min-width: 991px){
     .brush{
-      width: 500px;
-      top: 20px;
-      right: -50px;
+
+      width: 550px;
+      bottom: -94px;
+      right: -200px;
     }
     
 }
