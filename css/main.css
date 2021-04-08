@@ -213,6 +213,11 @@
   
   
   /*================== home header section =====================*/  
+  #header{
+    height: 100vh;
+    overflow-y: hidden;
+  }
+  
   #header .header-text{
   display: flex;
   justify-content: center;

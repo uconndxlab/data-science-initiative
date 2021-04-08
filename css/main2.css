@@ -215,6 +215,7 @@ a.nav-link:hover:after{
 /*================== home header section =====================*/  
 #header{
   height: 100vh;
+  overflow-y: hidden;
 }
 
 #header .header-text{
@@ -632,12 +633,6 @@ overflow: hidden;
 z-index: -9999;
 top: -100px;
 background-color: black;
-}
-
-@media(max-width:768px){
-  .shapes{
-    top:-200px
-  }
 }
 
 .content {
