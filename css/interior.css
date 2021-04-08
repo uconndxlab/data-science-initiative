@@ -64,6 +64,12 @@ h5.people-header{
     font-weight: 400;
     font-size: 20px;
 }
+
+h4.people-header {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
 .main-person-img{
     width: 250px;
     height: 250px;
@@ -98,20 +104,24 @@ a.linkedin-link{
     color: black;
 }
 
-a.linkedin-link img{
+a.linkedin-link svg{
     width: 35px;
-    margin-left: 8px;
+    margin-left: 5px;
     transition: .3s ease-in-out;
 }
 
-a.linkedin-link:hover img{
-    margin-left: 18px;
+a.linkedin-link:hover svg{
+    margin-left: 15px;
     cursor: none;
 }
 
 a.linkedin-link:hover{
-    color: #ffdc19;
     cursor: none;
+}
+
+a.linkedin-link:hover svg line{
+    stroke: #ffdc19;
+    transition: .2s ease-in-out;
 }
 
 #other-faculty{
@@ -143,8 +153,9 @@ p.person-title{
 
 /*================ column block row ================*/
 #column-block{
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: whitesmoke;
 }
 
 #column-block h5{
@@ -169,7 +180,7 @@ img.column-block-img{
 
 .column-block-item div:nth-child(1){
     height: 100%;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 10px 20px 40px 20px;
     border-top: 5px solid #ffdb1a;
 }
@@ -241,10 +252,9 @@ img.img-insert{
        object-fit: cover;
 }
 
-div.where-img:hover{
+div.where-img img{
     transition: .5s ease;
 }
-
 
 /*================= events email sign up ===================*/
 .email-signup{
