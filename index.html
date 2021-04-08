@@ -29,7 +29,7 @@
           
 
 
-<section id="header">
+<section id="header" class="home-header">
   <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
@@ -190,8 +190,8 @@
        var isTouchDevice = 'ontouchstart' in document.documentElement;
        if (isTouchDevice == false){
         document.body.addEventListener('mousemove', (evt)=>{
-        const mouseX = evt.clientX +10;
-        const mouseY = evt.clientY - 65;
+        const mouseX = evt.clientX;
+        const mouseY = evt.clientY;
 
         gsap.set(".cursor",{
           x:mouseX,

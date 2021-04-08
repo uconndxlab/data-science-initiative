@@ -193,6 +193,10 @@
     color: #000!important;
     cursor: none;
   }
+
+  .overlay a.nav-link:hover{
+    color: white!important;
+  }
   
   a.nav-link:after{
     content: '';
@@ -213,7 +217,7 @@
   
   
   /*================== home header section =====================*/  
-  #header{
+  #header.home-header{
     height: 100vh;
     overflow-y: hidden;
   }
@@ -251,10 +255,9 @@
   
   @media (min-width: 991px){
     .brush{
-
       width: 550px;
-      bottom: -94px;
-      right: -200px;
+      bottom: 0px;
+      right: 0px;
     }
     
 }
@@ -654,7 +657,7 @@
     position: relative;
 } 
   
-  .cursor {
+  .home-header .cursor {
     position: fixed;
     background: #FFDE17;
     border:black 1px solid;
@@ -668,7 +671,19 @@
             user-select: none;
     pointer-events: none;
     z-index: 100000;
-    margin: -10px 0 0 -20px;
+    margin: -72px 0 0 -8px;
+  }
+
+  @media (max-width:1310px){
+    .home-header .cursor{
+      margin: -97px 0px 0px -8px;
+    }
+  }
+
+  @media (max-width:991px){
+    .home-header .cursor{
+      margin: -57px 0px 0px -8px;
+    }
   }
   
   .shape {
