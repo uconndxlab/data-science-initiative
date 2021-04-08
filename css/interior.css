@@ -29,6 +29,10 @@
   }
 
 /*========== interior headers main ==========*/
+#intro h2{
+    padding-bottom: 20px;
+}
+
 .interior-header{
     margin-top: 150px;
     margin-bottom: 150px;
@@ -307,4 +311,26 @@ form.email-signup input{
 
 .email-signup button.btn-primary:hover{
     background-color: #ffdb1a;
+}
+
+
+/*================ interior header blocks ===================*/
+.gray-rec{
+    width: 30vw;
+    position: absolute;
+    left: 0px;
+    top: -100px;
+    height: 220px;
+    background: whitesmoke;
+    z-index: -999;
+}
+
+.yellow-rec{
+    position: absolute;
+    width: 200px;
+    right: 0;
+    top: 14px;
+    height: 100%;
+    background-color:#ffdb1a ;
+    z-index: -9999;
 }
