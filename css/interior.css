@@ -395,6 +395,10 @@ h5.news-title{
     margin-top: 15px;
 }
 
+#news{
+    margin-bottom: 100px;
+}
+
 /*================ involved page =================*/
 .button-div{
     margin-bottom: 60px;
