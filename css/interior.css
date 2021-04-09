@@ -59,6 +59,17 @@
 /* add padding to box grid text area */
 .inner-pad{
     padding:0px 30px;
+    overflow-x: hidden;
+}
+
+.inner-pad .linkedin-link {
+    padding-left: 30px;
+}
+
+@media (max-width:768px){
+    .inner-pad .linkedin-link{
+        padding-left: 0;
+    }
 }
 
 @media (max-width:991px){
@@ -75,7 +86,7 @@
     }
 }
 
-@media (max-width:576px){
+@media (max-width:768px){
     #intro p{
         padding:0px;
     }
@@ -90,6 +101,14 @@
     padding: 100px 0px;
     background-color: whitesmoke;
 
+}
+
+.white#main-faculty{
+    background-color: white;
+}
+
+.white#main-faculty img{
+    max-width: 100%;
 }
 
 h5.people-header{
@@ -260,7 +279,7 @@ p.where-normal{
 }
 
 #where-img-sec{
-    margin-top: 60px;
+    margin-bottom: 100px;
 }
 
 #where-img-sec .row{
@@ -333,4 +352,48 @@ form.email-signup input{
     height: 100%;
     background-color:#ffdb1a ;
     z-index: -9999;
+}
+
+@media (max-width:768px){
+    .yellow-rec{
+        width: 77px;
+    }
+}
+
+
+/*======================= news page =============================*/
+a.news-link img {
+    max-width: 100%;
+    transition: .5s ease-in-out;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+a.news-link div:hover img{
+    transform: scale(1.1);
+}
+
+a.news-link .news-img-container{
+    overflow:hidden
+}
+
+.news-link-outside{
+    padding:0px 20px
+}
+
+a.news-link h5{
+    margin-top: 15px;
+}
+
+/*================ involved page =================*/
+.button-div{
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+
+.button-div button.btn.btn-secondary{
+    margin-right: 4px;
+    margin-bottom: 4px;
 }

@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }  
   
+html {
+  scroll-behavior: smooth;
+}
   body{
     font-family: 'Karla', sans-serif;
     transition: background 1s ease-in-out;
@@ -112,6 +115,15 @@
     left: -4px;
     z-index: -9;
   }
+
+  @media(max-width:576px){
+    h2.line::before{
+      height: 50px;
+    }
+    h2.line::after{
+      top: 33px;
+    }
+  }
   
   
   button.btn{
@@ -139,7 +151,7 @@
 }
   
   button.btn.btn-primary:hover{
-    background-color: transparent;
+    background-color: #FFDE17;
     color: #000;
     border-color: black;
     cursor:none;
@@ -156,6 +168,15 @@
     color: white;
     border-color: black;
     cursor:none;
+  }
+
+  button.btn.btn-secondary a{
+    color: black;
+  }
+
+  button.btn.btn-secondary:hover a{
+    color: white!important;
+    cursor: none;
   }
 
   .component button.btn{
@@ -186,7 +207,7 @@
   
   a.nav-link{
     position: relative;
-    margin:0px 20px;
+    margin:0px 12px;
   
   }
   
@@ -385,6 +406,8 @@
 
   .full-height{
     height: 100vh;
+    display: flex;
+    align-items: center;
   }
   
   #intro img{
@@ -393,7 +416,6 @@
 
   #intro .row{
       display: flex;
-      justify-content: center;
       align-items: center;
   }
 
@@ -626,6 +648,8 @@
     color:black;
   }
   
+  /*==================== component 2 ===================*/
+  
   /*===================== in text link animations =======================*/
   .animated-underline{
   --uiAnimatedUnderlineWidth: var(--animatedUnderlineWidth, 100%);
@@ -781,7 +805,7 @@
   .overlay-content {
     position: relative;
     width: 100%;
-    top: 20%;
+    top: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -789,18 +813,9 @@
   }
   
   .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: whitesmoke;
-    display: block;
-    transition: 0.3s;
-  }
-
-  .overlay a {
     padding: 18px 0px; 
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     color: whitesmoke;
     display: block;
     transition: 0.3s;
@@ -809,7 +824,7 @@
   
 @media (min-width: 576px){
   .overlay a{
-    font-size: 30px;
+    font-size: 25px;
   }
 }
     
