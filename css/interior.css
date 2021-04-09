@@ -372,6 +372,7 @@ a.news-link img {
 
 a.news-link div:hover img{
     transform: scale(1.1);
+    cursor: none;
 }
 
 a.news-link .news-img-container{
@@ -382,7 +383,15 @@ a.news-link .news-img-container{
     padding:0px 20px
 }
 
-a.news-link h5{
+a.news-link div:hover .news-title{
+    color: #ffdb1a;
+}
+h5.news-title{
+    transition: .2s ease-in-out;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 5px;
     margin-top: 15px;
 }
 

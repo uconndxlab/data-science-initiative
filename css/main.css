@@ -702,6 +702,7 @@ html {
   
 /*================== blob circle effect on heading ===============*/
 .shapes {
+  overflow-y: hidden;
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -711,6 +712,7 @@ html {
   background-color: black;
 }
 .content {
+  overflow-y: hidden;
   overflow-x: hidden;
   position: absolute;
   left: 0;
@@ -748,15 +750,59 @@ html {
     margin: -72px 0 0 -8px;
   }
 
+  .shape.shape-1 {
+    display: none;
+    background: #FCD801;
+    width: 350px;
+    height: 350px;
+    margin: -151px 0px 0px -173px;
+  }
+  .shape.shape-2 {
+    display: none;
+    background: #E2C40D;
+    width: 140px;
+    height: 140px;
+    margin: -34px 0px 0px -69px;
+  }
+  .shape.shape-3 {
+    display: none;
+    background: #000;
+    width: 50px;
+    height: 50px;
+    margin: 10px 0px 0px -24px;
+  }
+
   @media (max-width:1310px){
     .home-header .cursor{
       margin: -97px 0px 0px -8px;
+    }
+
+    .shape.shape-1 {
+      margin: -151px 0px 0px -173px;
+    }
+    .shape.shape-2 {
+      margin: -55px 0px 0px -69px;
+    }
+    .shape.shape-3 {
+      margin: -11px 0px 0px -24px;
     }
   }
 
   @media (max-width:991px){
     .home-header .cursor{
       margin: -57px 0px 0px -8px;
+    }
+
+    .shape.shape-1 {
+      margin: -115px 0px 0px -173px;
+    }
+    .shape.shape-2 {
+
+      margin: -15px 0px 0px -69px;
+    }
+    .shape.shape-3 {
+
+      margin: 27px 0px 0px -24px;
     }
   }
   
@@ -765,27 +811,7 @@ html {
     position: absolute;
     border-radius: 50%;
   }
-  .shape.shape-1 {
-    display: none;
-    background: #FCD801;
-    width: 350px;
-    height: 350px;
-    margin: -88px 0px 0px -190px;
-  }
-  .shape.shape-2 {
-    display: none;
-    background: #E2C40D;
-    width: 140px;
-    height: 140px;
-    margin: 27px 0px 0px -82px;
-  }
-  .shape.shape-3 {
-    display: none;
-    background: #000;
-    width: 50px;
-    height: 50px;
-    margin: 72px 0px 0px -35px;
-  }
+
 
 
 /*================= new overlay nav bar =================*/
