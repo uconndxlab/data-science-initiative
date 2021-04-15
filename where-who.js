@@ -25,12 +25,17 @@ city.addEventListener("click", function(){
   imgInsert.style.transition = ".5s ease";
 })
 
+street.addEventListener("click", function(){
+  imgInsert.src = "img/where-imgs/Broad_street.jpg";
+  imgInsert.style.transition = ".5s ease";
+})
+
 building.addEventListener("click", function(){
   imgInsert.src = "img/where-imgs/9wbroadst.png";
   imgInsert.style.transition = ".5s ease";
 })
 
 suite.addEventListener("click", function(){
-  imgInsert.src = "img/where-imgs/StamfordTIP1.jpg";
+  imgInsert.src = "img/where-imgs/StamfordTIP1.1.jpg";
   imgInsert.style.transition = ".5s ease";
 })
