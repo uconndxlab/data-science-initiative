@@ -196,16 +196,13 @@
 
   
 
-
-
-    
-
     <!-- Optional JavaScript -->
     <script src="main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script>
        var isTouchDevice = 'ontouchstart' in document.documentElement;
        if (isTouchDevice == false){
+
 
         document.body.addEventListener('mousemove', (evt)=>{
         const mouseX = evt.clientX;
@@ -223,15 +220,18 @@
         })
        })
        
-       
-       var shapes1 = document.querySelector('.shape-1')
-       var shapes2 = document.querySelector('.shape-2')
-       var shapes3 = document.querySelector('.shape-3')
+       var shapes1 = document.querySelector('.shape-1');
+       var shapes2 = document.querySelector('.shape-2');
+       var shapes3 = document.querySelector('.shape-3');
 
        shapes1.style.display = 'block';
        shapes2.style.display = 'block';
        shapes3.style.display = 'block';
        
+       }
+       else{
+        var shape = document.querySelector('.shapes');
+       shape.style.height = '0vh';
        }
 
        function openNav() {
