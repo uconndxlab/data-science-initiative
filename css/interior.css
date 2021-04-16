@@ -451,7 +451,6 @@ form textarea{
     border-radius: 4px;
     font-size: 16px;
     resize: none;
-    cursor: none;
 }
 
 form input{
@@ -468,13 +467,15 @@ form button{
 }
 
 .dark-contact{
-    background-color: rgb(12, 12, 12);
+    background-color: whitesmoke
 }
 
 .dark-contact p{
 padding: 0;
-color: white;
 }
-.dark-contact h5{
-    color: white;
+
+@media (max-width:576px){
+    form{
+        margin-bottom: 0px;
+    }
 }

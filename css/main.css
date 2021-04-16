@@ -19,8 +19,16 @@ html {
     color: black;
   }
 
-  a.nav-link.active {
-    color: #ffdd17!important;
+  a.nav-link.active:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%) scaleX(1);
+      transform-origin: 50% 50%;
+      width: 100%;
+      height: 2px;
+      background-color: #FFDE17;
 }
   
   .navbar-nav{
