@@ -860,7 +860,7 @@ html {
   
   .overlay .closebtn {
     position: absolute;
-    top: 20px;
+    top: 0px;
     right: 45px;
     font-size: 60px;
   }
@@ -869,7 +869,7 @@ html {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
     font-size: 40px;
-    top: 15px;
+    top: 0px;
     right: 35px;
     }
   }
