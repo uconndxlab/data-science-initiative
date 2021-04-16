@@ -10,14 +10,22 @@ var imgInsert = document.querySelector('.img-insert');
 var whereBold = document.querySelector('.where-bold');
 var whereNormal = document.querySelector('.where-normal');
 
+var countryName = document.querySelector('#country');
+
+var stateName = document.querySelector('#state');
+
+
 country.addEventListener("click", function(){
   imgInsert.src = "img/where-imgs/nasa-usa.png";
   imgInsert.style.transition = ".5s ease";
+
+
 })
 
 state.addEventListener("click", function(){
   imgInsert.src = "img/where-imgs/connecticut-img.png";
   imgInsert.style.transition = ".5s ease";
+
 })
 
 city.addEventListener("click", function(){
@@ -39,3 +47,4 @@ suite.addEventListener("click", function(){
   imgInsert.src = "img/where-imgs/StamfordTIP1.1.jpg";
   imgInsert.style.transition = ".5s ease";
 })
+

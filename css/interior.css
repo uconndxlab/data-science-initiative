@@ -239,7 +239,8 @@ p.person-title{
 }
 
 .column-block-p{
-    padding:0
+    padding:0;
+    margin-bottom: 2rem;
 }
 
 img.column-block-img{
@@ -288,6 +289,10 @@ p.where-normal{
     transition: .2s ease-in-out;
 }
 
+p.where-normal:focus{
+    color: #ffdb1a!important;
+}
+
 .where-row:hover p{
     color: #ffdb1a;
 }
@@ -295,6 +300,10 @@ p.where-normal{
 .where-row{
     padding: 10px 30px; 
     border-bottom: 1px solid black
+}
+
+.where-row:hover{
+    cursor: pointer;
 }
 
 #where-img-sec{

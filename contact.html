@@ -7,6 +7,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
@@ -15,15 +19,20 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
-     <!-- AOS -->
+     
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9ZZYCTPE9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-H9ZZYCTPE9');
+    </script>
+
+    <!-- AOS -->
      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-     <!-- Font Awesome -->
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
-    <title>Stamford Data Science Initiative</title>
+    <title>Stamford Data Science Initiative | Contact</title>
   </head>
   <body>
 
@@ -84,8 +93,6 @@
       </nav>
     
     </section>
-
-<div class="cursor"></div>
   <!-- Content -->
 
   <section class="container-fluid interior-header" id="intro">
@@ -130,9 +137,7 @@
             </div>
             <div class="col-lg-5 p-5 dark-contact">
                 <h5>Contact Information</h5>
-                <p>9 West Broad Street, Stamford, CT</p>
-                <p>email@email.com</p>
-                <p>(xxx) xxx - xxxx</p>
+                <p>If you’re more comfortable sending a direct message to a human being rather than filling out a form we get it. <br>Feel free to reach out to anyone in the “Who” section on the <a class="animated-underline animated-underline_type1 news__link" href="where-who.html">Where?Who? page</a> by using the following format for our email addresses firstname.lastname@uconn.edu. </p>
             </div>
 
         </div>
@@ -181,15 +186,8 @@
           x:mouseX,
           y:mouseY
         });
-        
-        gsap.to('.shape',{
-          x:mouseX,
-          y:mouseY,
-          stagger: -0.1
-        })
        })
-       
-       document.body.style.cursor = 'none';
+
        }
 
        function openNav() {

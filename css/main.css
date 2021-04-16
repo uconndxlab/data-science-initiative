@@ -18,6 +18,10 @@ html {
     text-align: center;
     color: black;
   }
+
+  a.nav-link.active {
+    color: #ffdd17!important;
+}
   
   .navbar-nav{
     z-index: 9999;
@@ -133,6 +137,7 @@ html {
     border-radius: 0px;
     font-size: 0.95em;
     letter-spacing: .02em;
+
   }
 
   
@@ -396,8 +401,15 @@ html {
   padding:0px 30px
   }
 
+  #intro .bullet p{
+    padding: 0px 45px;
+  }
+
   #intro .bullet p::before {
     content: '';
+    position: absolute;
+    top: 10px;
+    left: 25px;
     width: 10px;
     height: 10px;
     background: #ffda1a;
@@ -406,6 +418,16 @@ html {
 
   }
 
+
+  @media (max-width:768px){
+    #intro .bullet p{
+      padding: 0px 20px;
+    }
+    
+    #intro .bullet p::before{
+      left: 0px;
+    }
+  }
   .full-height{
     height: 100vh;
     display: flex;
