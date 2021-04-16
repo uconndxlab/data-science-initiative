@@ -180,11 +180,6 @@ a.linkedin-link svg{
 
 a.linkedin-link:hover svg{
     margin-left: 15px;
-    cursor: none;
-}
-
-a.linkedin-link:hover{
-    cursor: none;
 }
 
 a.linkedin-link:hover svg line{
@@ -344,7 +339,6 @@ form.email-signup input{
     text-transform: uppercase;
     padding: 16px 23px;
     border-radius: 0px;
-    cursor: none;
     font-size: 0.95em;
     letter-spacing: .02em;
     border: 1px solid black;
@@ -400,7 +394,6 @@ a.news-link img {
 
 a.news-link div:hover img{
     transform: scale(1.1);
-    cursor: none;
 }
 
 a.news-link .news-img-container{
@@ -409,10 +402,6 @@ a.news-link .news-img-container{
 
 .news-link-outside{
     padding:0px 20px
-}
-
-.news-link-outside a{
-    cursor:  none;
 }
 
 a.news-link div:hover .news-title{
@@ -459,7 +448,6 @@ form textarea{
 form input{
     width: 100%;
     padding:12px 20px;
-    cursor:none;
 }
 
 form{

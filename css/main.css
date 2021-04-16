@@ -131,14 +131,10 @@ html {
     text-transform: uppercase;
     padding: 16px 23px;
     border-radius: 0px;
-    cursor: none;
     font-size: 0.95em;
     letter-spacing: .02em;
   }
 
-  button.btn:hover{
-    cursor: none;
-  }
   
   button.btn.btn-primary{
     background-color: black;
@@ -154,7 +150,6 @@ html {
     background-color: #FFDE17;
     color: #000;
     border-color: black;
-    cursor:none;
   }
 
   button.btn.btn-secondary{
@@ -167,7 +162,6 @@ html {
     background-color: black;
     color: white;
     border-color: black;
-    cursor:none;
   }
 
   button.btn.btn-secondary a{
@@ -176,7 +170,6 @@ html {
 
   button.btn.btn-secondary:hover a{
     color: white!important;
-    cursor: none;
   }
 
   .component button.btn{
@@ -213,7 +206,6 @@ html {
   
   a.nav-link:hover{
     color: #000!important;
-    cursor: none;
   }
 
   .overlay a.nav-link:hover{
@@ -681,7 +673,6 @@ html {
   
   .animated-underline_type1:hover{
   --animatedUnderlineHeight: 100%;
-  cursor: none;
   }
   
   

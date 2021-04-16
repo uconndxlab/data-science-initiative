@@ -18,13 +18,19 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
-     <!-- AOS -->
-     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9ZZYCTPE9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-H9ZZYCTPE9');
+    </script>
 
-     <!-- Font Awesome -->
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- AOS -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Stamford Data Science Initiative</title>
   </head>
@@ -86,7 +92,7 @@
 
   </nav>
 
-  <div class="cursor"></div>
+
   <div class="shapes">
     <span class="shape shape-1"></span>
     <span class="shape shape-2"></span>
@@ -217,7 +223,7 @@
         })
        })
        
-       document.body.style.cursor = 'none';
+       
        var shapes1 = document.querySelector('.shape-1')
        var shapes2 = document.querySelector('.shape-2')
        var shapes3 = document.querySelector('.shape-3')
