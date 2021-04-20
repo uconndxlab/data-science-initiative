@@ -16,6 +16,8 @@ function onScroll() {
       return {el, rect};
     })
     .find(section => section.rect.bottom >= (window.innerHeight * 0.8));
-  document.body.style.background = section.el.getAttribute('data-bg');
+  
+  // section is undefined when you reach the bottom of the page
+  if(typeof section !== 'undefined') document.body.style.background = section.el.getAttribute('data-bg');
 }
 
