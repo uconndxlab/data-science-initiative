@@ -199,8 +199,13 @@ a.linkedin-link:hover svg line{
 img.person-img {
     width: 200px;
     height: 200px;
-       -o-object-fit: contain;
-          object-fit: contain;
+       -o-object-fit: cover;
+          object-fit: cover;
+}
+
+.person.partners img.person-img{
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 .person{
