@@ -410,9 +410,12 @@ form.email-signup input{
 a.news-link img {
     max-width: 100%;
     transition: .5s ease-in-out;
-    height: 250px;
     -o-object-fit: cover;
        object-fit: cover;
+}
+
+a.news-link .news-img-container .main{
+    overflow:hidden;
 }
 
 a.news-link div:hover img{
@@ -430,17 +433,37 @@ a.news-link .news-img-container{
 a.news-link div:hover .news-title{
     color: #ffdb1a;
 }
-h5.news-title{
+
+h5.news-title {
+    color: white;
+    background: black;
     transition: .2s ease-in-out;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 800;
     margin-bottom: 5px;
     margin-top: 15px;
+    display: table;
+    padding: 7px 10px;
 }
 
 #news{
     margin-bottom: 100px;
+}
+
+.news-link-outside h5.people-header{
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+p.news-date {
+    padding: 0;
+    font-size: 14px;
+    color: gray;
+}
+
+.news-link-outside.stack .row{
+    margin-bottom: 10px!important;
 }
 
 /*================ involved page =================*/
