@@ -378,30 +378,6 @@ form.email-signup input{
 }
 
 /*================ events page ==============*/
-.event {
-    margin-bottom: 100px;
-}
-
-.event hr{
-margin: 30px;
-}
-
-.event h4{
-    padding: 0px;
-}
-
-.event p {
-    padding: 0;
-}
-
-.event .news-date{
-    margin-bottom: 10px;
-}
-
-.event img{
-    max-width: 100%;
-}
-
 .card-header {
     border-bottom: 1px solid rgb(255 218 26);
     background: #ffda1a;
@@ -416,6 +392,7 @@ margin: 30px;
     border: 1px solid rgb(255 218 26);
     border-radius: 0px;
     margin-bottom: 15px;
+    margin-top: 20px;
 }
 /*================ interior header blocks ===================*/
 .gray-rec{
@@ -497,12 +474,6 @@ h5.news-title {
 .news-link-outside h5.people-header{
     font-size: 18px;
     margin-bottom: 0px;
-}
-
-p.news-date {
-    padding: 0;
-    font-size: 14px;
-    color: gray;
 }
 
 .news-link-outside.stack .row{

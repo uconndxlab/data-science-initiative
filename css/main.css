@@ -955,3 +955,43 @@ footer .extra-footer{
   overflow: hidden;
 }
 
+/*============= events ===============*/
+.event {
+  margin-bottom: 100px;
+}
+
+.event hr{
+margin: 30px;
+}
+
+.event h4{
+  padding: 0px;
+}
+
+.event p {
+  padding: 0;
+}
+
+.event .news-date{
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.event img{
+  max-width: 100%;
+}
+
+.event h4{
+  font-size: 30px;
+  font-family: 'Karla', sans-serif;
+}
+
+.event h2{
+  padding: 0;
+}
+
+p.news-date {
+  padding: 0;
+  font-size: 14px;
+  color: gray;
+}
