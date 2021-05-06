@@ -236,7 +236,7 @@ p.person-title{
 #column-block{
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 #column-block h5{
@@ -357,6 +357,10 @@ div.where-img img{
     margin-top: 30px;
 }
 
+form.email-signup button{
+    margin: 0;
+}
+
 form.email-signup input{
     font-weight: 500;
     text-transform: uppercase;
@@ -373,7 +377,46 @@ form.email-signup input{
     background-color: #ffdb1a;
 }
 
+/*================ events page ==============*/
+.event {
+    margin-bottom: 100px;
+}
 
+.event hr{
+margin: 30px;
+}
+
+.event h4{
+    padding: 0px;
+}
+
+.event p {
+    padding: 0;
+}
+
+.event .news-date{
+    margin-bottom: 10px;
+}
+
+.event img{
+    max-width: 100%;
+}
+
+.card-header {
+    border-bottom: 1px solid rgb(255 218 26);
+    background: #ffda1a;
+}
+
+.card-header p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card{
+    border: 1px solid rgb(255 218 26);
+    border-radius: 0px;
+    margin-bottom: 15px;
+}
 /*================ interior header blocks ===================*/
 .gray-rec{
     width: 30vw;

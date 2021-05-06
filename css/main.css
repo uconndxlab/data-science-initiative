@@ -17,6 +17,7 @@ html {
     font-weight: 600;
     text-align: center;
     color: black;
+    line-height: 20px;
   }
 
   a.nav-link.active:after {
