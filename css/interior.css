@@ -394,6 +394,10 @@ form.email-signup input{
     margin-bottom: 15px;
     margin-top: 20px;
 }
+
+.events-padding h4{
+    padding: 0;
+}
 /*================ interior header blocks ===================*/
 .gray-rec{
     width: 30vw;
@@ -478,6 +482,10 @@ h5.news-title {
 
 .news-link-outside.stack .row{
     margin-bottom: 10px!important;
+}
+
+.col-lg-5.news-link-outside.stack{
+    padding: 0px 35px;
 }
 
 /*================ involved page =================*/
