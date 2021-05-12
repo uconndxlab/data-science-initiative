@@ -398,6 +398,18 @@ form.email-signup input{
 .events-padding h4{
     padding: 0;
 }
+
+.past-event p {
+    padding: 10px 0px 30px 0px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+iframe#kaltura_player {
+    width: 450px;
+    height: 285px;
+}
+
 /*================ interior header blocks ===================*/
 .gray-rec{
     width: 30vw;
