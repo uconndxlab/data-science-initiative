@@ -405,16 +405,16 @@ form.email-signup input{
     font-weight: 500;
 }
 
-iframe#kaltura_player {
-    width: 450px;
-    height: 285px;
-}
-
 @media (max-width: 576px){
     iframe#kaltura_player {
         width: 300px;
         height: 200px;
     }
+}
+
+iframe#kaltura_player {
+    width: 450px;
+    height: 285px;
 }
 /*================ interior header blocks ===================*/
 .gray-rec{
