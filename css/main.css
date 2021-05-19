@@ -41,7 +41,7 @@ html {
 
   @media(max-width:991px){
     .navbar-nav{
-        display: none;
+        /*display: none;*/
     }
   }
   
@@ -1002,4 +1002,13 @@ p.news-date {
   padding: 0;
   font-size: 14px;
   color: #525252;
+}
+
+
+
+
+
+/*=========== new nav ==========*/
+.navbar-expand-lg .navbar-collapse{
+  justify-content: center;
 }
