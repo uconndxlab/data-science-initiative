@@ -735,7 +735,7 @@ html {
 }
 
 .content {
-  overflow-y: hidden;
+  /*overflow-y: hidden;*/
   overflow-x: hidden;
   position: absolute;
   left: 0;
