@@ -59,7 +59,7 @@
       </div>
     
       <nav class="navbar navbar-light navbar-right navbar-expand-lg">
-        <button onclick="openNav()"  class="navbar-toggler" type="button" data-toggle="collapse" >
+        <button aria-label="navigation" onclick="openNav()"  class="navbar-toggler" type="button" data-toggle="collapse" >
           <span class="navbar-toggler-icon"></span>
         </button>
         <ul class="navbar-nav">
@@ -114,7 +114,7 @@
 
   <section class="container-fluid" id="column-block">
     <div class="container">
-      <h5>Partners external to UConn</h5>
+      <h3 class="s3-h3">Partners external to UConn</h3>
       <div class="row row-flex gx-5">
           <div class="col-lg-4 column-block-item p-3" data-aos="flip-right" data-aos-duration="1000">
               <div>
@@ -144,10 +144,10 @@
         </div>
         <div class="col-lg-4 column-block-item p-3" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="400">
             <div>
-              <img class="column-block-img" src="img/logos/logo-att.png">
+              <img class="column-block-img" src="img/logos/logo-att.png" alt="at&t logo">
               <p class="column-block-title">AT&T</p>
               <p class="column-block-p">Our partner in the creation of the 5G innovation lab that will benefit all aspects of the initiative (i.e., TIP Digital, the S3, and the faculty fellows).  See <a class="animated-underline animated-underline_type1 news__link" href="news.html">news page</a> for more info about the partnership. </p>
-              <a class="linkedin-link" target="_blank" href="https://www.att.com/">Website Link<svg width="34" height="13" viewBox="0 0 34 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <a class="linkedin-link" target="_blank" rel="noreferrer noopener" href="https://www.att.com/">Website Link<svg width="34" height="13" viewBox="0 0 34 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="1.8335" y1="6.41896" x2="31.2322" y2="6.49095" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <line x1="1" y1="-1" x2="7.94677" y2="-1" transform="matrix(0.707756 0.706457 -0.711207 0.702983 25.7939 1)" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <line x1="1" y1="-1" x2="7.94706" y2="-1" transform="matrix(0.711207 -0.702983 -0.707756 -0.706457 25.7666 11.7114)" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -161,14 +161,14 @@
 
 <section class="container-fluid white" id="main-faculty">
     <div class="container">
-        <h5>Partners internal to UConn </h5>
+        <h3 class="s3-h3">Partners internal to UConn </h3>
         <div class="row partners">
             <div class="col-md-6 main-person">
                 <img class="" src="img/logos/uconn-research.jpg" alt="University of connecticut research logo">
             </div>
 
             <div class="col-md-6 main-person">
-                <h5 class="people-header">Office of the Vice President for Research</h5>
+                <h4 class="people-header">Office of the Vice President for Research</h4>
                 <p class="main-person-school"> The office at UConn that oversees the technology incubation program and is managing this entire initiative (this is us!)</p>
                 <a class="linkedin-link" target="_blank" rel="noreferrer noopener" href="https://research.uconn.edu/">Website Link<svg width="34" height="13" viewBox="0 0 34 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <line x1="1.8335" y1="6.41896" x2="31.2322" y2="6.49095" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -252,23 +252,7 @@
     
 
     <!-- Optional JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script>
-       var isTouchDevice = 'ontouchstart' in document.documentElement;
-       if (isTouchDevice == false){
-        document.body.addEventListener('mousemove', (evt)=>{
-        const mouseX = evt.clientX +10;
-        const mouseY = evt.clientY - 65;
-
-        gsap.set(".cursor",{
-          x:mouseX,
-          y:mouseY
-        });
-        
-       })
-
-       }
-
        function openNav() {
           document.getElementById("myNav").style.width = "100%";
         }

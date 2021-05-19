@@ -57,7 +57,7 @@
       </div>
     
       <nav class="navbar navbar-light navbar-right navbar-expand-lg">
-        <button onclick="openNav()"  class="navbar-toggler" type="button" data-toggle="collapse" >
+        <button aria-label="navigation" onclick="openNav()"  class="navbar-toggler" type="button" data-toggle="collapse" >
           <span class="navbar-toggler-icon"></span>
         </button>
         <ul class="navbar-nav">
@@ -120,14 +120,14 @@
   </section>
 
 
-  <section class="container-fluid grid-right" id="intro">
+  <section class="container-fluid grid-right faculty-fellows" id="intro">
     <div class="row">
       <div class="col-lg-6">
         <img src="img/faculty-fellows/business1.png" alt="university of connecticut school of business building">
       </div>
       <div class="col-lg-6">
         <div class="inner-pad">
-          <h4 data-aos="fade-left" data-aos-duration="800">UConn School of Business position (two positions)</h4>
+          <h3 data-aos="fade-left" data-aos-duration="800">UConn School of Business position (two positions)</h3>
           <a data-aos="fade-left" data-aos-duration="800" class="linkedin-link" target="_blank" rel="noreferrer noopener" href="https://academicjobsonline.org/ajo/jobs/18113">View Job Ad <svg width="34" height="13" viewBox="0 0 34 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <line x1="1.8335" y1="6.41896" x2="31.2322" y2="6.49095" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <line x1="1" y1="-1" x2="7.94677" y2="-1" transform="matrix(0.707756 0.706457 -0.711207 0.702983 25.7939 1)" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -140,11 +140,11 @@
     </div>
   </section>
 
-  <section class="container-fluid grid-left" id="intro" >
+  <section class="container-fluid grid-left faculty-fellows" id="intro" >
     <div class="row">
       <div class="col-lg-6">
         <div class="inner-pad">
-          <h4 data-aos="fade-right" data-aos-duration="800">UConn School of Engineering position</h4>
+          <h3 data-aos="fade-right" data-aos-duration="800">UConn School of Engineering position</h3>
              <a data-aos="fade-right" data-aos-duration="800" class="linkedin-link" target="_blank" rel="noreferrer noopener" href="https://academicjobsonline.org/ajo/jobs/18069">View Job Ad <svg width="34" height="13" viewBox="0 0 34 13" fill="none" xmlns="http://www.w3.org/2000/svg">
               <line x1="1.8335" y1="6.41896" x2="31.2322" y2="6.49095" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               <line x1="1" y1="-1" x2="7.94677" y2="-1" transform="matrix(0.707756 0.706457 -0.711207 0.702983 25.7939 1)" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -161,14 +161,14 @@
   </section>
 
 
-  <section class="container-fluid grid-right" id="intro">
+  <section class="container-fluid grid-right faculty-fellows" id="intro">
     <div class="row">
       <div class="col-lg-6">
         <img src="img/faculty-fellows/liberal1.png" alt="university of connecticut college of liberal arts and sciences building">
       </div>
       <div class="col-lg-6">
         <div class="inner-pad">
-          <h4 data-aos="fade-left" data-aos-duration="800">UConn College of Liberal Arts and Sciences position</h4>
+          <h3 data-aos="fade-left" data-aos-duration="800">UConn College of Liberal Arts and Sciences position</h3>
               <a data-aos="fade-left" data-aos-duration="800"class="linkedin-link" target="_blank" rel="noreferrer noopener" href="https://academicjobsonline.org/ajo/jobs/18357">View Job Ad <svg width="34" height="13" viewBox="0 0 34 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="1.8335" y1="6.41896" x2="31.2322" y2="6.49095" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <line x1="1" y1="-1" x2="7.94677" y2="-1" transform="matrix(0.707756 0.706457 -0.711207 0.702983 25.7939 1)" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -181,11 +181,11 @@
     </div>
   </section>
 
-  <section class="container-fluid grid-left" id="intro">
+  <section class="container-fluid grid-left faculty-fellows" id="intro">
     <div class="row">
       <div class="col-lg-6" >
         <div class="inner-pad">
-          <h4 data-aos="fade-right" data-aos-duration="800">UConn School of Fine Arts position</h4>
+          <h3 data-aos="fade-right" data-aos-duration="800">UConn School of Fine Arts position</h3>
           <a data-aos="fade-right" data-aos-duration="800" class="linkedin-link" target="_blank" rel="noreferrer noopener" href="https://academicjobsonline.org/ajo/jobs/18302">View Job Ad <svg width="34" height="13" viewBox="0 0 34 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <line x1="1.8335" y1="6.41896" x2="31.2322" y2="6.49095" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <line x1="1" y1="-1" x2="7.94677" y2="-1" transform="matrix(0.707756 0.706457 -0.711207 0.702983 25.7939 1)" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -220,23 +220,7 @@
     
 
     <!-- Optional JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script>
-       var isTouchDevice = 'ontouchstart' in document.documentElement;
-       if (isTouchDevice == false){
-        document.body.addEventListener('mousemove', (evt)=>{
-        const mouseX = evt.clientX +10;
-        const mouseY = evt.clientY - 65;
-
-        gsap.set(".cursor",{
-          x:mouseX,
-          y:mouseY
-        });
-
-       })
-
-       }
-
        function openNav() {
           document.getElementById("myNav").style.width = "100%";
         }

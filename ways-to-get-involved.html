@@ -59,7 +59,7 @@
       </div>
     
       <nav class="navbar navbar-light navbar-right navbar-expand-lg">
-        <button onclick="openNav()"  class="navbar-toggler" type="button" data-toggle="collapse" >
+        <button aria-label="navigation" onclick="openNav()"  class="navbar-toggler" type="button" data-toggle="collapse" >
           <span class="navbar-toggler-icon"></span>
         </button>
         <ul class="navbar-nav">
@@ -118,10 +118,10 @@
   </section>
 
   <section class="container button-div" >
-      <h5>Who are you?</h5>
+      <h3>Who are you?</h3>
       <div class="row">
           <div class="col-md-12">
-            <a href="#startup"><button type="button" class="btn btn-secondary">Start-Up</button></a>
+            <a href="#startup"><button type="button" class="btn btn-secondary"><span>Start-up</span></button></a>
             <a href="#company"><button type="button" class="btn btn-secondary">Established Company</button></a>
             <a href="#philanthropist"><button type="button" class="btn btn-secondary">Philanthropist</button></a>
             <a href="#student"><button type="button" class="btn btn-secondary">Student</button></a>
@@ -272,22 +272,7 @@
     
 
     <!-- Optional JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script>
-       var isTouchDevice = 'ontouchstart' in document.documentElement;
-       if (isTouchDevice == false){
-        document.body.addEventListener('mousemove', (evt)=>{
-        const mouseX = evt.clientX +10;
-        const mouseY = evt.clientY - 65;
-
-        gsap.set(".cursor",{
-          x:mouseX,
-          y:mouseY
-        });
-        
-       })
-       }
-
        function openNav() {
           document.getElementById("myNav").style.width = "100%";
         }
