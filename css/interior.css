@@ -26,6 +26,7 @@
 
 #message-text li{
     padding-bottom: 10px;
+    font-size: 18px;
 }
 
 #message-text h2{
@@ -45,10 +46,6 @@
 .inner-pad{
     padding:0px 30px;
     overflow-x: hidden;
-}
-
-.inner-pad .linkedin-link {
-    padding-left: 30px;
 }
 
 @media (max-width:768px){
@@ -122,6 +119,7 @@ h3.people-header{
     margin-bottom: 40px;
     font-weight: 400;
     font-size: 20px;
+    line-height: 1.5em;
 }
 
 h4.people-header {
@@ -334,7 +332,19 @@ p.where-normal{
     }
 }
 
+@media (max-width:991px){
+    .col-lg-8.where-img{
+        order:0;
+    }
 
+    #where-img-sec .col-lg-4{
+        order: 1;
+    }
+
+    div.where-img img{
+        height: 100%;
+    }
+}
 
 
 img.img-insert{
@@ -376,17 +386,17 @@ form.email-signup input{
 
 /*================ events page ==============*/
 .card-header {
-    border-bottom: 1px solid rgb(255 218 26);
-    background: #ffda1a;
+    border-bottom: 1px solid rgb(226 226 226);
+    background: #f5f5f5;
 }
 
 .card-header p{
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .card{
-    border: 1px solid rgb(255 218 26);
+    border: 1px solid#f5f5f5;
     border-radius: 0px;
     margin-bottom: 15px;
     margin-top: 20px;
@@ -402,16 +412,17 @@ form.email-signup input{
     font-weight: 500;
 }
 
+
+iframe#kaltura_player {
+    width: 450px;
+    height: 285px;
+}
+
 @media (max-width: 576px){
     iframe#kaltura_player {
         width: 300px;
         height: 200px;
     }
-}
-
-iframe#kaltura_player {
-    width: 450px;
-    height: 285px;
 }
 
 .events h3.s3-h3{
@@ -608,7 +619,7 @@ padding: 0;
 }
 
 h3.carousel{
-    margin-top: 6f0px;
+    margin-top: 60px;
     text-align:center;
     line-height: 1.2em;
 }
