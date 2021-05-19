@@ -27,6 +27,7 @@
 #message-text li{
     padding-bottom: 10px;
     font-size: 18px;
+    line-height: 2em;
 }
 
 #message-text h2{
