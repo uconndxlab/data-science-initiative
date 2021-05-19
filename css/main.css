@@ -409,6 +409,12 @@ html {
   padding-left:30px;
   }
 
+  @media (max-width:567px){
+    .interior-header#intro p{
+      padding: 0;
+    }
+  }
+
   #intro .bullet p{
     padding: 0px 45px;
   }
