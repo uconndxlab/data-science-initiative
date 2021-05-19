@@ -1012,3 +1012,8 @@ p.news-date {
 .navbar-expand-lg .navbar-collapse{
   justify-content: center;
 }
+
+.navbar{
+  position: fixed;
+  width: 100vw;
+}
