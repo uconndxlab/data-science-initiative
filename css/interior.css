@@ -4,13 +4,13 @@
 }
 
 .interior-header{
-    margin-top: 170px;
+    margin-top: 200px;
     margin-bottom: 150px;
 }
 
 @media (max-width:576px){
     .interior-header{
-        margin-top: 130px;
+        margin-top: 150px;
     }
 
 }
