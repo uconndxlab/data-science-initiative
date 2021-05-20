@@ -186,7 +186,6 @@ html {
   
   .navbar-expand-lg .navbar-nav .nav-link{
     padding:0px 0px 7px 0px;
-
   }
   
   a.nav-link{
@@ -223,7 +222,12 @@ html {
     margin: 0px 10px 0px 0px;
   }
   
-  
+  @media (max-width:991px){
+    .navbar-expand-lg .navbar-nav a.nav-link{
+      margin: 12px 15px;
+      display: inline-block;
+    }
+  }
   /*================== home header section =====================*/  
   .yellow{
     color: #FFDE17;
