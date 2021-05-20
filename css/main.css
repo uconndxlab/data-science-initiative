@@ -185,7 +185,8 @@ html {
   }
   
   .navbar-expand-lg .navbar-nav .nav-link{
-    padding:0px ;
+    padding:0px 0px 7px 0px;
+
   }
   
   a.nav-link{
@@ -224,17 +225,6 @@ html {
   
   
   /*================== home header section =====================*/  
-  /*#header.home-header{
-    height: 100vh;
-  }
-  
-  #header .header-text{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  }
-  */
   .yellow{
     color: #FFDE17;
   }
@@ -268,6 +258,10 @@ html {
       width: 700px;
       bottom: -95px;
       right: -300px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link{
+      text-align: center;
     }
     
 }
@@ -945,4 +939,6 @@ p.news-date {
   position: fixed;
   padding: 7px 0px 20px 0px;
   top: 0;
+  background-color: white!important;
+  box-shadow: 2px 2px 2px #80808014;
 }
