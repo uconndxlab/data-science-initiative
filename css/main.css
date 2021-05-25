@@ -38,8 +38,8 @@ html {
     justify-content: center;
   }
   
-  @media (min-width: 992px){
-    .navbar-expand-lg .navbar-nav .nav-link {
+  @media (min-width: 1200px){
+    .navbar-expand-xl .navbar-nav .nav-link {
         padding-right: 1rem;
         padding-left: 1rem;
     }
@@ -184,7 +184,7 @@ html {
     text-decoration: none;
   }
   
-  .navbar-expand-lg .navbar-nav .nav-link{
+  .navbar-expand-xl .navbar-nav .nav-link{
     padding:0px 0px 7px 0px;
   }
   
@@ -222,8 +222,8 @@ html {
     margin: 0px 10px 0px 0px;
   }
   
-  @media (max-width:991px){
-    .navbar-expand-lg .navbar-nav a.nav-link{
+  @media (max-width:1200px){
+    .navbar-expand-xl .navbar-nav a.nav-link{
       margin: 12px 15px;
       display: inline-block;
     }
@@ -264,7 +264,7 @@ html {
       right: -300px;
     }
 
-    .navbar-expand-lg .navbar-nav .nav-link{
+    .navbar-expand-xl .navbar-nav .nav-link{
       text-align: center;
     }
     
@@ -823,7 +823,7 @@ html {
   }
 
   .navbar{
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 
 /*=============== footer ================*/
@@ -933,7 +933,7 @@ p.news-date {
 
 
 /*=========== new nav ==========*/
-.navbar-expand-lg .navbar-collapse{
+.navbar-expand-xl .navbar-collapse{
   justify-content: center;
 }
 
@@ -945,4 +945,16 @@ p.news-date {
   top: 0;
   background-color: white!important;
   box-shadow: 2px 2px 2px #80808014;
+}
+
+@media (max-width:1200px){
+  .navbar .navbar-brand img{
+    margin-left: 15px;
+  }
+}
+
+@media (min-width:1200px){
+  .navbar .navbar-brand img{
+    display: none!important;
+  }
 }

@@ -434,8 +434,8 @@ iframe#kaltura_player {
     width: 30vw;
     position: absolute;
     left: 0px;
-    top: -100px;
-    height: 220px;
+    top: -172px;
+    height: 291px;
     background: whitesmoke;
     z-index: -999;
 }
@@ -627,4 +627,22 @@ h3.carousel{
     margin-top: 60px;
     text-align:center;
     line-height: 1.2em;
+}
+
+.controls-top{
+    margin-top: 20px;
+}
+
+.carousel-indicators{
+    bottom: 25px;
+}
+
+.carousel-indicators li{
+    background-color:#ffda1a;;
+    height: 5px;
+    cursor: pointer;
+}
+
+.carousel-indicators li.active{
+background: black;
 }

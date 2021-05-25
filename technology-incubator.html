@@ -40,7 +40,10 @@
   <body>
 
     <section id="header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/SDS-Logo1.png" width="30"  class="d-inline-block align-top" alt="stamford data science logo">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -119,10 +122,11 @@
   <h3 class="carousel s3-h3" data-aos="fade-left" data-aos-duration="1000">Who we’re currently incubating in Stamford</h3>
         <!--Controls-->
         <div class="controls-top mobile" data-aos="fade" data-aos-duration="1000">
-          <a class="btn-floating" href="#multi-item-example" data-slide-to="1">Back |</a>
-          <a class="btn-floating" href="#multi-item-example" data-slide-to="0">Next</a>
+          <a class="btn-floating" href="#multi-item-example" data-slide-to="prev">Prev |</a>
+          <a class="btn-floating" href="#multi-item-example" data-slide-to="next">Next</a>
         </div>
         <!--/.Controls-->
+
   <div class="container my-4" data-aos="fade" data-aos-duration="1000">
     <!--Carousel Wrapper-->
     <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
@@ -239,16 +243,44 @@
   
         </div>
         <!--/.Second slide-->
+
+        <!--Third slide-->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card mb-2 column-block-item" role="option">
+                <img class="column-block-img" src="img/logos/Unscrambl_logo.png" alt="junity logo">
+                <div class="card-body">
+                  <p class="column-block-title">Unscrambl</p>
+                  <p class="column-block-p">An augmented intelligence company that unlocks data and insights using machine learning techniques so that businesses can make better, faster decisions.</p>
+                  <a class="linkedin-link" target="_blank" rel="noreferrer noopener" href="https://www.unscrambl.com/">Website Link <svg width="34" height="13" viewBox="0 0 34 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="1.8335" y1="6.41896" x2="31.2322" y2="6.49095" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <line x1="1" y1="-1" x2="7.94677" y2="-1" transform="matrix(0.707756 0.706457 -0.711207 0.702983 25.7939 1)" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <line x1="1" y1="-1" x2="7.94706" y2="-1" transform="matrix(0.711207 -0.702983 -0.707756 -0.706457 25.7666 11.7114)" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/.Third slide-->
   
       </div>
       <!--/.Slides-->
         
       <!--Controls-->
       <div class="controls-top">
-        <a class="btn-floating" href="#multi-item-example" data-slide-to="0">Back |</a>
-        <a class="btn-floating" href="#multi-item-example" data-slide-to="1">Next</a>
+        <a class="left carousel-control" href="#multi-item-example"  onclick="$('#myCarousel').carousel('prev')" data-slide="prev">Prev |</a>
+        <a class="right carousel-control" href="#multi-item-example"  onclick="$('#myCarousel').carousel('next')" data-slide="next">Next</a>
       </div>
       <!--/.Controls-->
+
+      <ol class="carousel-indicators">
+        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+        <li data-target="#multi-item-example" data-slide-to="1"></li>
+        <li data-target="#multi-item-example" data-slide-to="2"></li>
+      </ol>
   
     </div>
     <!--/.Carousel Wrapper-->
