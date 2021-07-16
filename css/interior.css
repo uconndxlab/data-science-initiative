@@ -519,6 +519,10 @@ span.news-title {
     padding: 0px 35px;
 }
 
+.news-reg .news-link-outside {
+    margin: 15px 0px;
+}
+
 /*================ involved page =================*/
 .button-div{
     margin-bottom: 60px;

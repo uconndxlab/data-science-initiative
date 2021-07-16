@@ -855,6 +855,7 @@ footer .row .footer-col:nth-child(1){
 footer .row .footer-col:nth-child(2) p{
   color: white;
   padding: 0px 30px 0px 30px;
+  margin-bottom: 5px;
 }
 
 footer .row .footer-col:nth-child(1) p{
@@ -876,6 +877,11 @@ footer .extra-footer{
   justify-content: center;
   background: #1f1f1f;
   padding: 0px 15px;
+}
+
+footer a.social-icon{
+  font-size: 30px;
+  color: white;
 }
 
 /*============= home intro text ==============*/

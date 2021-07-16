@@ -811,9 +811,11 @@ justify-content: center;
 footer .row .footer-col:nth-child(2) p{
 color: white;
 padding: 0px 30px 0px 30px;
+margin-bottom: 0px;
 }
 
 footer .row .footer-col:nth-child(1) p{
 color: black;
 padding: 30px 30px 0px 30px;
 }
+
