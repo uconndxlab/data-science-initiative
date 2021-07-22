@@ -411,6 +411,7 @@ form.email-signup input{
     padding: 10px 0px 30px 0px;
     font-size: 18px;
     font-weight: 500;
+    line-height: 1.5em;
 }
 
 
@@ -419,8 +420,30 @@ iframe#kaltura_player {
     height: 285px;
 }
 
+.past-event img{
+    width: 450px;
+    margin-bottom: 7px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 285px;
+}
+
+.past-event a{
+    overflow:hidden;
+}
+
+.past-event a:hover p{
+    text-decoration: underline;
+}
+  
+
 @media (max-width: 576px){
     iframe#kaltura_player {
+        width: 300px;
+        height: 200px;
+    }
+
+    .past-event img{
         width: 300px;
         height: 200px;
     }

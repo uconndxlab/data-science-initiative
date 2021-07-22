@@ -896,6 +896,7 @@ footer a.social-icon{
 /*============= events ===============*/
 .event {
   margin-bottom: 100px;
+  display: none;
 }
 
 .event hr{
@@ -933,9 +934,6 @@ p.news-date {
   font-size: 14px;
   color: #525252;
 }
-
-
-
 
 
 /*=========== new nav ==========*/
