@@ -609,9 +609,9 @@ padding: 0;
 }
 
 .carousel-item .card{
-    height: 540px;
+    height: 500px;
     background-color: white;
-    padding: 10px 20px 40px 20px;
+    padding: 30px 20px 40px 20px;
     border-top: 5px solid #ffdb1a!important;
     box-shadow: #dedede 2px 2px 4px 2px;
     border: 1px solid rgba(0,0,0,.125);
@@ -619,15 +619,37 @@ padding: 0;
     margin-top:0px
 }
 
+.carousel-item#car-four .card{
+    height: 600px;
+}
+
+@media(min-width:768px){
+    .carousel-item .card{
+        height: 420px;
+    }
+
+    .carousel-item#car-four .card {
+        height: 420px;
+    }
+}
+
 @media(min-width:991px){
     .carousel-item .card{
         height: 555px;
+    }
+
+    .carousel-item#car-four .card{
+        height: 620px;
     }
 }
 
 @media(min-width:1200px){
     .carousel-item .card{
-        height: 480px;
+        height: 530px;
+    }
+
+    .carousel-item#car-four .card{
+        height: 600px;
     }
 }
 
