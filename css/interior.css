@@ -609,7 +609,7 @@ padding: 0;
 }
 
 .carousel-item .card{
-    height: 500px;
+    height: 100%;
     background-color: white;
     padding: 30px 20px 40px 20px;
     border-top: 5px solid #ffdb1a!important;
@@ -631,6 +631,10 @@ padding: 0;
     .carousel-item#car-four .card {
         height: 420px;
     }
+
+    .carousel-item#car-six .card{
+        height: 464px;
+    }
 }
 
 @media(min-width:991px){
@@ -640,6 +644,10 @@ padding: 0;
 
     .carousel-item#car-four .card{
         height: 620px;
+    }
+
+    .carousel-item#car-six .card{
+        height: 710px;
     }
 }
 
