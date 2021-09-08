@@ -896,6 +896,7 @@ footer a.social-icon{
 /*============= events ===============*/
 .event {
   margin-bottom: 100px;
+  display: none;
 }
 
 .event hr{
