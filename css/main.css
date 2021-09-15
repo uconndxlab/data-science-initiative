@@ -966,3 +966,10 @@ p.news-date {
     display: none!important;
   }
 }
+
+
+/*============= add elements ================*/
+.note{
+  padding: 20px!important;
+  background-color: whitesmoke;
+}
