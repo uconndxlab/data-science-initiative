@@ -571,12 +571,13 @@ form textarea{
     box-sizing: border-box;
     border-radius: 4px;
     font-size: 16px;
-    resize: none;
+    margin-bottom: 20px;
 }
 
 form input{
     width: 100%;
     padding:12px 20px;
+    margin-bottom: 20px;
 }
 
 form{
