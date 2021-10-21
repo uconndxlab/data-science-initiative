@@ -403,9 +403,17 @@ html {
   padding-left:30px;
   }
 
+  .interior-header#intro ul{
+    padding-left:50px;
+    }
+
   @media (max-width:567px){
     .interior-header#intro p{
       padding: 0;
+    }
+
+  .interior-header#intro ul{
+    padding-left:15px;
     }
   }
 
