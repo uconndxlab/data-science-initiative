@@ -481,6 +481,10 @@ iframe#kaltura_player {
 
 
 /*======================= news page =============================*/
+.news{
+    margin-bottom:50px ;
+}
+
 #news .row{
     margin-bottom: 40px;
 }
@@ -703,4 +707,14 @@ h3.carousel{
 
 .carousel-indicators li.active{
 background: black;
+}
+
+/*========= news page add articles and podcasts =========*/
+#news h3, #podcasts h3{
+    margin-bottom: 30px;
+}
+
+#podcasts{
+    padding: 60px 0px 40px 0px;
+    background-color: #F5F5F5;
 }
