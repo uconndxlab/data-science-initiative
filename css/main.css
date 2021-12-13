@@ -476,10 +476,6 @@ html {
       width: 100%;
   }
 
-  #intro button{
-    margin-left: 30px;
-  }
-
   @media(min-width:991px){
     #intro .col-lg-6{
         padding-left:0;
