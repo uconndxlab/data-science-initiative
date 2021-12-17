@@ -261,6 +261,11 @@ img.column-block-img{
     margin-bottom: 15px;
 }
 
+img.column-block-img#hackathon {
+    height: 120px;
+    margin: 0px
+}
+
 .column-block-item div:nth-child(1){
     height: 100%;
     background-color: white;
