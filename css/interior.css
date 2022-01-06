@@ -715,7 +715,7 @@ background: black;
 }
 
 /*========= news page add articles and podcasts =========*/
-#news h3, #podcasts h3{
+#news h3.s3-h3, #podcasts h3.s3-h3{
     margin-bottom: 30px;
 }
 
