@@ -723,3 +723,73 @@ background: black;
     padding: 60px 0px 40px 0px;
     background-color: #F5F5F5;
 }
+
+/*=========== hackathon accordion =============*/
+.accordion p{
+    margin: 0;
+}
+
+.accordion button{
+    padding: 15px 35px;
+    display: block;
+    width: 100%;
+    text-transform: none;
+    white-space: normal;
+    text-align: left;
+}
+
+.accordion button.btn.btn-link.collapsed:hover, .accordion button.btn.btn-link.collapsed:focus{
+    text-decoration: none;
+}
+
+.accordionbutton.btn.btn-link:hover, .accordion button.btn.btn-link:focus{
+text-decoration: none;
+}
+
+.accordion button.btn.btn-link{
+    color: black;
+}
+
+.accordion .card{
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.accordion {
+    margin-top: 30px;
+}
+
+.accordion .card-header{
+    padding: 0px;
+}
+
+.accordion button:before {
+    content: "+";
+    margin-top: 9px;
+    font-size: 20px;
+    color: #000!important;
+    font-weight: 600;
+    transition: .1s ease-in-out;
+    left: 13px;
+    top: 3px;
+    position: absolute;
+}
+
+.accordion button[aria-expanded="true"]:before {
+    transform: rotate(
+45deg
+);
+}
+
+/*============ hackathon people =============*/
+.hackathon h3{
+    margin-bottom: 15px;
+}
+
+.hackathon .main-person{
+    margin-bottom: 60px;
+}
+
+.hackathon .margin{
+    margin-bottom: 0px;
+}
