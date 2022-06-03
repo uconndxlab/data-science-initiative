@@ -642,7 +642,7 @@ padding: 0;
         height: 420px;
     }
 
-    .carousel-item#car-six .card{
+    .carousel-item#car-six .card, .carousel-item#car-seven .card{
         height: 464px;
     }
 }
@@ -656,7 +656,7 @@ padding: 0;
         height: 620px;
     }
 
-    .carousel-item#car-six .card{
+    .carousel-item#car-six .card, .carousel-item#car-seven .card{
         height: 710px;
     }
 }
